@@ -8,7 +8,7 @@ function Xerox(){
         let resultado
         for (let i = 1; i <= 500; i++) {
             resultado = i * 0.33
-            todosNums.push("\n" + `${i} = R$${resultado.toFixed(2)}`)
+            todosNums.push("\n" + `${i} cópia(s) = R$${resultado.toFixed(2)}`)
         }
         setPreco(todosNums)
     }
