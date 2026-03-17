@@ -3,6 +3,7 @@ import { useState } from "react"
 
 function Tabuada(){
     const[tabuada, setTabuada] = useState([])
+    let conditional = "1"
     function mostrarTabuada(){
         let todosNums = []
         let resultado
@@ -17,6 +18,7 @@ function Tabuada(){
         <div>
             <h2>MJ</h2>
             <ul>
+                {conditional && <p>Apareceu</p>}
                 {tabuada.map((numero, index) =>(
                     <li>{numero}</li>
                 ))}
