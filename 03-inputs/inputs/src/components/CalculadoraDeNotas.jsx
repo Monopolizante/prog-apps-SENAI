@@ -26,6 +26,7 @@ function CalculadoraDeNotas() {
             <input type="number" placeholder="Nota 2" value={segundaNota} onChange={((e) => setSegundaNota(e.target.value))}></input>
             <br></br>
             <button onClick={calcularNota}>Calcular Nota</button>
+            <br></br>
             <strong>{mediaNota}</strong>
         </div>
     )
