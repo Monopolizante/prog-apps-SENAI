@@ -1,0 +1,32 @@
+* {
+    font-family: Arial, Helvetica, sans-serif
+}
+nav{
+    background-color: rgba(52, 9, 97, 0.39);
+    border-radius: 3px;
+    padding: 5px;
+    height: 100px;
+    text-align: center;
+    font-size: 20pt
+  }
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    border-radius: 6px;
+}
+button{
+    font-size: 14pt;
+    background:none;
+    border: 0;
+    color: rgb(16, 63, 163)
+}
+hr{
+    overflow: visible;
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
