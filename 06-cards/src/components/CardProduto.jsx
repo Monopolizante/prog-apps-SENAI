@@ -8,6 +8,6 @@ function CardProduto(prop) {
             <h3>Valor R${prop.p.preco.toFixed(2).replace(".", ",")}</h3>
         </div>
     )
-}''
+}
 
 export default CardProduto
