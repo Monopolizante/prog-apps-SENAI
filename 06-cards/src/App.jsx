@@ -33,7 +33,7 @@ function App() {
 export default App */
 
 import { useState } from 'react'
-import { FaHorse } from "react-icons/fa";
+import Card from './components/Card'
 
 import './App.css'
 
@@ -504,41 +504,67 @@ function App() {
 
 
       <section>
-        {/* map de cavalos */}
+        <h2>Cavalos</h2>
+        <div className="cont-principal">
+          {cavalos.map((cavalo => (
+            <Card p={cavalo} key={cavalo.id} />
+          )))}
+        </div>
       </section>
 
       <section>
-        {/* map de carros */}
+      <h2>Carros</h2>
+        <div className="cont-principal">
+          {carros.map((carro => (
+            <Card p={carro} key={carro.id} />
+          )))}
+        </div>
       </section>
 
       <section>
-        {/* map  de ... */}
+        <h2>Dinossauros</h2>
+        <div className="cont-principal">
+          {dino.map((dino => (
+            <Card p={dino} key={dino.id} />
+          )))}
+        </div>
       </section>
 
       <section>
-        <h2>demo de imagens usando os pokemons </h2>
-        {/* {pokemonhos.map((poke) => (
-          <img src={poke.imagem} alt="" />
-        ))} */}
+        <h2>Pokemonhos</h2>
+        <div className="cont-principal">
+          { pokemonhos.map((poke) => (
+            <Card p={poke} key={poke.id}/>
+          )) }
+        </div>
       </section>
 
-      <FaHorse />
-      <FaHorse
-        color="#8b4513" // Aceita nomes, HEX, RGB, etc.
-        size="3rem"     // Aceita strings (px, em, rem) ou números (que viram px)
-      />
-      <FaHorse
-        color="#000000" // Aceita nomes, HEX, RGB, etc.
-        size="3rem"     // Aceita strings (px, em, rem) ou números (que viram px)
-      />
-      <FaHorse
-        color="#ffffff" // Aceita nomes, HEX, RGB, etc.
-        size="3rem"     // Aceita strings (px, em, rem) ou números (que viram px)
-      />
-      <FaHorse
-        color="#21138b" // Aceita nomes, HEX, RGB, etc.
-        size="3rem"     // Aceita strings (px, em, rem) ou números (que viram px)
-      />
+      <section>
+        <h2>Viagens</h2>
+        <div className="cont-principal">
+          { viagens.map((viagem) => (
+            <Card p={viagem} key={viagem.id}/>
+          )) }
+        </div>
+      </section>
+
+      <section>
+        <h2>Notas</h2>
+        <div className="cont-principal">
+          { notas.map((nota) => (
+            <Card p={nota} key={nota.id}/>
+          )) }
+        </div>
+      </section>
+
+      <section>
+        <h2>Bandas de KPOP</h2>
+        <div className="cont-principal">
+          { kpops.map((banda) => (
+            <Card p={banda} key={banda.id}/>
+          )) }
+        </div>
+      </section>
 
     </>
   )

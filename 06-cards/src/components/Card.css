@@ -1,0 +1,14 @@
+
+.cont-card{
+    box-shadow: 0 0 5px black;
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+img{
+    width: 150px
+}
