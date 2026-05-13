@@ -1,6 +1,12 @@
 import React from 'react'
 import './Card.css'
-function Card(prop) {
+function Card(prop) { 
+    // você poderia trocar o prop pela variavel que tu usou no map
+    // e adicionar colchetes {prop} pra fazer com 
+    // que ele venha desestruturado, aí tu pode só usar 
+    // a variavel que tu mandou e o atributo
+    // Tu também pode desfazer a própria variável que tu recebel assim:
+    // const {atributoQueEuQuero1, atributoQueEuQuero2, atributoQueEuQuero3} = variavelRecebida
     return (
             <div className="cont-card">
                 {prop.p.nome && <h3>{prop.p.nome}</h3>}
